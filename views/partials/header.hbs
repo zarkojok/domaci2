@@ -1,26 +1,44 @@
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 <style>
-    #tja {
-    font-size: 20px;
-    }
+  #linci {
+    position: :absolute;
+    top:0px;
+    list-style-type: none;
+    background-color: rgb(230, 225, 219);
+    background: radial-gradient(rgb(245, 245, 245), rgb(250, 250, 250), rgb(255, 255, 255));
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  #linci li {
+    display: inline-block;
+    width: 90px;
+    padding:5px;
+    background-color:white;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin:20px;
+    border-radius: 10px;
+    text-align: center;
+    border: solid 1px black;
+
+  }
+  #linci li:hover{
+    background-color: black;
+    cursor:pointer;
+  }
+  #linci li:hover a {
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  #linci a {
+    color:black;
+    font-size: 18px;
+  }
 </style>
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-          <div id="tja">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/films">Films</a>
-          </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/places">Places</a>
-          </li>
-        </ul>
-    </div>
-      </div>
-    </nav>
+
+<ul id="linci">
+  <li><a href="/">Home</a></li>
+  <li><a href="/films">Films</a></li>
+  <li><a href="/places">Places</a></li>
+</ul>
