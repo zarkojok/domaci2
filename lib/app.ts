@@ -30,12 +30,17 @@ class App {
 
         router.get('/', (req:Request, res:Response) => {
             res.render('home', {
-                ime: 'Zarko Jokmanovic'
+                ime: 'Zarko Jokmanovic',
+                slika: '461234646-Toni-Servillo-La-grande-bellezza.jpg'
             });
         }); 
 
         router.get('/places', (req:Request, res:Response) => {
-            res.render('places');
+            res.render('places', {
+                slika1: '1200px-Space_Needle002.jpg',
+                slika2: 'orlando-florida-lake-eola-travel-guide-ftr.jpg',
+                slika3: 'beautiful-day-birds-eye-view-of-buffalo-ny-and-surrounding-areas-michael-frank-jr.jpg'
+            });
         }); 
 
         router.get('/films', (req:Request, res:Response) => {
